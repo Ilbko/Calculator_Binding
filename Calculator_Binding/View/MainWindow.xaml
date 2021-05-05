@@ -37,8 +37,8 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBox Name="TextHistory" Grid.ColumnSpan="4" FontSize="30" Foreground="Gray"></TextBox>
-        <TextBox Name="TextResult" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="60"></TextBox>
+        <TextBox Name="TextHistory" Grid.ColumnSpan="4" FontSize="30" Foreground="Gray" Text="{Binding HistoryProperty, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+        <TextBox Name="TextResult" Grid.Row="1" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="4" FontWeight="Bold" FontSize="60" Text="{Binding ResultProperty, UpdateSourceTrigger=PropertyChanged}"></TextBox>
         <Button Name="ButtonCE" Grid.Row="3" Grid.Column="0" Content="CE" Background="LightGray" Foreground="DeepSkyBlue"></Button>
         <Button Name="ButtonC" Grid.Row="3" Grid.Column="1" Content="C" Background="LightGray" Foreground="DeepSkyBlue"></Button>
         <Button Name="ButtonErase" Grid.Row="3" Grid.Column="2" Content="&lt;-" Background="LightGray" Foreground="DeepSkyBlue"></Button>
