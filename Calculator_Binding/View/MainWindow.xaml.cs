@@ -17,5 +17,10 @@ namespace Calculator_Binding
             InitializeComponent();
             this.DataContext = this.ViewModel = new CalcViewModel();
         }
+
+        //Работа калькулятора по нажатию на его кнопки
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        }
     }
 }

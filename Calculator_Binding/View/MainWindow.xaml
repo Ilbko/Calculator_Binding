@@ -10,8 +10,9 @@
         <Grid.Resources>
             <Style TargetType="Button">
                 <Setter Property="Margin" Value="2"></Setter>
-            <Setter Property="FontSize" Value="30"></Setter>
-        </Style>
+                <Setter Property="FontSize" Value="30"></Setter>
+                <EventSetter Event="Click" Handler="Button_Click"></EventSetter>
+            </Style>
             <Style TargetType="TextBox">
                 <Setter Property="Margin" Value="2"></Setter>
                 <Setter Property="Background" Value="White"></Setter>
